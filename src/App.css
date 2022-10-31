@@ -1,38 +1,55 @@
-.App {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h4, h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .gridContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gridBox {
+  border: 1px solid black;
+  height: 170px;
+  width: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.datePlacer {
+  height: 40px;
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dateBox {
+  border: 1px solid black;
+  height: 40px;
+  width: 50px;
+}
+
+.monthBox {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+
+}
+
+.dayBox {
+  background-color: lightyellow;
+  border: 1px solid black;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  color: rgb(99, 59, 142);
 }

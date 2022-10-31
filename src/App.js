@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import WeekA from './weeks/WeekA';
+import WeekB from './weeks/WeekB';
+import WeekC from './weeks/WeekC';
+import WeekD from './weeks/WeekD';
+import WeekE from './weeks/WeekE';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>NOVEMBER</h2>
+      <WeekA />
+      <WeekB />
+      <WeekC />
+      <WeekD />
+      <WeekE />
+
     </div>
   );
 }
